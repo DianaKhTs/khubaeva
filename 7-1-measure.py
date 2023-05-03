@@ -6,6 +6,7 @@ GPIO.setwarnings(False)
 measured_data=[]
 dac = [26,19,13,6,5,11,9,10]
 comp = 4
+
 troyka = 17
 GPIO.setup(dac,GPIO.OUT)
 GPIO.output(dac,0)
