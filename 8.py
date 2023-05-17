@@ -9,7 +9,7 @@ nt = settings[1]
 data_new_array = np.loadtxt("data.txt",dtype = int)*k
 data_time = np.array([i*nt for i in range(data_new_array.size)])
 
-fig, ax = plt.subplots(figsize=(6,5),dpi = 400)
+fig, ax = plt.subplots(figsize=(6,5),dpi = 100)
 
 ax.set_title("график зарядки и разрядки конденсатора")
 ax.set_ylabel("U, V")
@@ -21,7 +21,7 @@ ax.grid(which='minor', color = 'lightgray', linestyle = '--')
 ax.grid(which='major', color = 'dimgray', linestyle = '-')
 
 
-ax.plot(data_time, data_new_array, linewidth=1, label = 'U(t)', marker = "D",ms = 2,markevery = 20)
+ax.plot(data_time, data_new_array, linewidth=1, label = 'U(t)', marker = "D",ms = 3,markevery = 20,mec = "red")
 
   
 
