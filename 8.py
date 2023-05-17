@@ -20,11 +20,15 @@ ax.minorticks_on()
 ax.grid(which='minor', color = 'lightgray', linestyle = '--')
 ax.grid(which='major', color = 'dimgray', linestyle = '-')
 
-ax.plot(data_time, data_new_array, linewidth=1, label = 'U(t)')
-ax.scatter(data_time[0:data_new_array.size:20], data_new_array[0:data_new_array.size:20], marker = 's', c = 'red', s=10)
+
+ax.plot(data_time, data_new_array, linewidth=1, label = 'U(t)', marker = "D",ms = 2,markevery = 20)
+
+  
+
+#ax.scatter(data_time[0:data_new_array.size:20], data_new_array[0:data_new_array.size:20], marker = 's', c = 'red', s=10)
 ax.legend()
 
 #ax.plot(data_array)
-#plt.show()
+plt.show()
 fig.savefig('graphic.png')
 fig.savefig('graphic.svg')
